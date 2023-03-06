@@ -1,0 +1,47 @@
+body {
+    padding: 50px;
+}
+
+div.letter {
+    position: relative;
+    border: 1px solid #000;
+    width: 400px;
+    min-height: 200px;
+}
+
+div.letter-actions {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    min-width: calc(100% - 20px);
+    border: 1px solid red;
+}
+
+div.letter-actions button {
+    float: right;
+}
+
+div h1:first-child {
+    position: relative;
+    font-size: 1.2em;
+    background-color: #990000;
+    color: #fff;
+    text-align: center;
+    width: 420px;
+    left: -10px;
+}
+
+div h1:first-child::before {
+    content: '';
+    position: absolute;
+    border-color: transparent #7c0000 #7c0000 transparent;
+    left: -0px;
+    top: -10px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+p {
+    padding: 10px 10px 10px 10px;
+}
